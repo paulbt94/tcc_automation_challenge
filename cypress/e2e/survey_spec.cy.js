@@ -25,8 +25,7 @@ describe('TCC Survey', () => {
         cy.get(tcc_survey_additionalInformation_PO.surveyAdditionalInfoLabel).should('be.visible')
         cy.get(tcc_commonElements_PO.tccSurveyNextButton).click();
 
-        cy.origin('https://www.experian.com/employer-services', () => {
-            cy.visit('/')
+        cy.origin('https://www.experian.com', () => {
             cy.url().should('contain', 'https://www.experian.com/employer-services')
           })
     });
