@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "testOnChrome": "npx cypress run --browser chrome --headed --spec cypress/e2e/survey_spec.cy.js" 
   },
   "keywords": [],
   "author": "",
