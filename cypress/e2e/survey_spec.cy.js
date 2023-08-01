@@ -12,11 +12,13 @@ describe('TCC Survey', () => {
 
     it('Submit survey', () => {
         cy.get(tcc_survey_basicInformation_PO.surveyStartLabel).should('be.visible');
-
+        // Using cypress commands I added the logic behind to fill the survey inputs
+        // so I only have to pass the parameters to reduce code in the test itself
         cy.fillBasicInfoSurvey('John', 'Doe', 'tcctest@yopmail.com', '123 Test Street', 'Test City', '10101');
         cy.get(tcc_commonElements_PO.tccSurveyNextButton).click();
 
         cy.get(tcc_survey_questions_PO.surveyQuestionsLabel).should('be.visible');
+        // Here I added another cypress command to select No option on all questions and avoid many lines of code on the test
         cy.selectNoSurveyAnswers();
         cy.get(tcc_commonElements_PO.tccSurveyNextButton).click();
 
