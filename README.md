@@ -13,28 +13,34 @@ Before running the Cypress project, please make sure you have the following soft
 
 Please ensure that the above software is properly installed and configured on your system before proceeding.
 
-## Project Setup
 
-To set up the project with Cypress and Cucumber BDD, follow these steps:
+## Cloning the repo
 
+To clone the repository, follow these steps
 1. Open a terminal or command prompt.
 2. Navigate to the project directory using the `cd` command.
-3. Initialize a new Node.js project by running the following command:
+3.  Execute the following command:
+   ```bash
+   git clone https://github.com/paulbt94/tcc_automation_challenge.git
+   ```
+
+## Project setup and running Cypress Tests
+
+To set up the project and run Cypress tests, follow these steps:
+
+1. Open the Visual Studio Code application.
+2. From VSCode open the folder that contains the project.
+3. Open a terminal and make sure it's pointing to the project directory.
+4. Switch from the main to the master branch.
+5. Initialize a new Node.js project by running the following command:
    ```bash
    npm init -y
    ```
-4. Install Cypress as a development dependency by running the following command:
+6. Install Cypress as a development dependency by running the following command:
    ```bash
    npm install cypress --save-dev
    ```
-
-## Running Cypress Tests
-
-To run Cypress tests, follow these steps:
-
-1. Open a terminal or command prompt.
-2. Navigate to the project directory using the `cd` command.
-3. Execute the following command to run the test directly on Chrome:
+7. Execute the following command to run the test directly on Chrome:
    ```bash
    npm run testOnChrome
    ```
