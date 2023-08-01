@@ -46,3 +46,9 @@ To set up the project and run Cypress tests, follow these steps:
    ```
 
 That's it! You should now be able to see Cypress executing the test on Chrome and the results are displayed on the terminal.
+You can also see the auto-generated report by following these steps:
+1. Navigate to cypress > reports
+2. From there right click the index.html file and click on Copy Path option
+3. Open your browser, paste the path, and hit enter
+   
+Now you'll get a nice HTML report for the test run.
